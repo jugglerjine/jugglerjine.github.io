@@ -1,6 +1,6 @@
 {
-    "name": "minigame_byheart",
-    "short_name": "minigame_byheart",
+    "name": "byheart",
+    "short_name": "byheart",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

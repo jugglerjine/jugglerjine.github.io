@@ -35135,7 +35135,7 @@ $R:0,
 $S:0}
 F.cm.prototype={
 F:function(a,b){var s=H.a([C.DZ,C.E2],t.Ez),r=H.a([new P.hO("ja","JP")],t._p),q=X.aki(C.a_)
-return new S.ud(new F.CQ(D.afs(0),null),"MiniGame_ByHeart",q,s,r,!1,null)}}
+return new S.ud(new F.CQ(D.afs(0),null),"ByHeart",q,s,r,!1,null)}}
 F.CQ.prototype={
 yj:function(a){return this.a_t(a)},
 a_t:function(a){var s=0,r=P.V(t.z),q
