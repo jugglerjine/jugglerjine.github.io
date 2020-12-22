@@ -1,6 +1,6 @@
 {
-    "name": "testapp1",
-    "short_name": "testapp1",
+    "name": "testapp2",
+    "short_name": "testapp2",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
