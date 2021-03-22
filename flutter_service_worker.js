@@ -3,22 +3,23 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "version.json": "22f5fa33e53904769bf5765e135dd857",
-"index.html": "c15623d9b2664d62318a3e1831b8556c",
-"/": "c15623d9b2664d62318a3e1831b8556c",
-"main.dart.js": "6b44fc611a533113860f87859db88b59",
+  "version.json": "95c943ff4f0acdf1e3d5cf5b70b1424b",
+"index.html": "70763b27b10046f507da441619bc8a7c",
+"/": "70763b27b10046f507da441619bc8a7c",
+"main.dart.js": "67e35e9700fef37cc38b48b860dd83c9",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "c7f9edb59c0fe93127f52588ecd34d27",
 "assets/images/calchint.png": "c39209146d570bdb6108cf0c5e36545d",
 "assets/images/3.0x/calchint.png": "6792178c6aaa66a26b05ce5f46d566be",
-"assets/AssetManifest.json": "912dd9f69e5114be1d79eab35588eba7",
-"assets/NOTICES": "bbb4c90e3682e0c79e39a6fe6a0eee5a",
+"assets/AssetManifest.json": "38d012beab8ff6d284a9e04379c85875",
+"assets/NOTICES": "36b40cd378fffd6dbba1fc6c5c56b399",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/fonts/MaterialIcons-Regular.otf": "1288c9e28052e028aba623321f7826ac",
 "assets/assets/pushing_a_key.mp3": "57e9663a1562b6a502445945fe12a2a5",
+"assets/assets/button04a.mp3": "87c9919f899b7372afb5baeebdb74ec9",
 "assets/assets/sceneswitch2.mp3": "c47ccd7059c445e7b184719ce8530d69",
 "assets/assets/blip03.mp3": "cb9c72684a95c66be3d29631996d9356",
 "assets/assets/clapping_bravo.mp3": "7fde0b5064265e30bdbe35d7e266a689",
@@ -167,7 +168,7 @@ async function downloadOffline() {
     }
     currentContent[key] = true;
   }
-  for (var resourceKey in Object.keys(RESOURCES)) {
+  for (var resourceKey of Object.keys(RESOURCES)) {
     if (!currentContent[resourceKey]) {
       resources.push(resourceKey);
     }
